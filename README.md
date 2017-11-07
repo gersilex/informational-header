@@ -27,7 +27,14 @@ See `examples/notifications.items` for a working example.
 
 - Choose the custom widget as header replacement for one or more of your dashboards. Find instructions [in the official post on the openHAB Community forums](https://community.openhab.org/t/new-display-options-incl-experimental-custom-widgets-everywhere/34140)
 
-![HABPanel configuration example](https://github.com/gersilex/informational-header/raw/master/HABPanel-Dashboard-settings.png)
+![HABPanel configuration example](https://github.com/gersilex/informational-header/raw/master/example/HABPanel-Dashboard-settings.png)
+
+Interactivity & Rules
+---------------------
+
+In the settings of the widget, you can choose a command to be sent, when you click or tap the notification. This can be used to fire rules that listen to `received command OFF` commands.
+
+For example, you could stop a flood alarm, turn off your whole-house-audio system, reset energy meters or anything else that may need context-sensitive interaction.
 
 Contributing
 ------------
