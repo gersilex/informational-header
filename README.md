@@ -1,0 +1,2 @@
+# informational-header
+Displays customizable, interactive notification items after the dashboard name. Notifications should be separate items and be member of a group you set in &lt;Notifications Group Name>. Style the notification with Bootstrap3 button classes by adding one of these classes to your item's tags: \"btn-default\", \"btn-primary\", \"btn-success\", \"btn-info\", \"btn-warning\", \"btn-danger\". Give the buttons an additional glowing animation by adding \"glow\" to the item's tags in addition to the btn-color-classes.
