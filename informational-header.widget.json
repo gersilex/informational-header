@@ -1,0 +1,36 @@
+{
+    "template": "<style>\n\t.glow {\n    /* \n    Animation inspired by Jason Jones \n    https://github.com/jmsjones/habpanel-widgets/blob/master/attention-with-button.widget.json) \n    */\n\n  animation-name: glow;\n    animation-duration: 3s;\n    animation-iteration-count: infinite;\n  }\n  @keyframes glow {\n    50%  {background-color: black; border-color: transparent; color: white;}\n\t}\n</style>\n<h2>{{ngModel.name}}\n  <div class=\"pull-right\" style=\"margin-left: 0.25em; display: inline-flex;\">\n      <div ng-repeat=\"notification in itemsInGroup(config.notifications_group_name)\"\n         ng-if=\"itemValue(notification.name) == config.notification_item_condition\"\n         ng-click=\"sendCmd(notification.name, config.send_on_click_command)\"\n         style=\"margin: inherit;\"\n         class=\"btn {{config.additional_classes_btn}}\"\n         ng-class=\"notification.tags\">{{ notification.label }}\n    \t</div>\n  </div>\n</h2>",
+    "name": "Header with interactive notifications",
+    "author": "Leroy Förster",
+    "description": "Displays customizable, interactive notification items after the dashboard name. Notifications should be separate items and be member of a group you set in <Notifications Group Name>. Style the notification with Bootstrap3 button classes by adding one of these classes to your item's tags: \"btn-default\", \"btn-primary\", \"btn-success\", \"btn-info\", \"btn-warning\", \"btn-danger\". Give the buttons an additional glowing animation by adding \"glow\" to the item's tags in addition to the btn-color-classes.",
+    "settings": [
+        {
+            "type": "item",
+            "id": "notifications_group_name",
+            "label": "Notifications Group Name",
+            "default": "notifications",
+            "description": "A group of Switch Items. The Items' labels will be displayed when the item's state matches the state you set below."
+        },
+        {
+            "type": "string",
+            "id": "notification_item_condition",
+            "label": "Notification item condition",
+            "default": "ON",
+            "description": "The notification is shown if a member of the group <Notifications Group> has exactly the state you set here."
+        },
+        {
+            "type": "string",
+            "id": "send_on_click_command",
+            "label": "Send command on click",
+            "default": "OFF",
+            "description": "Sends a command to the single notification that was clicked."
+        },
+        {
+            "type": "choice",
+            "id": "additional_classes_btn",
+            "label": "Additional bootstrap3 classes for the buttons",
+            "choices": "btn-sm,btn-lg,",
+            "description": "This modifies the style classes of all buttons. Make them smaller or larger as you desire."
+        }
+    ]
+}

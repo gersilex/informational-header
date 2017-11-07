@@ -1,0 +1,5 @@
+Group notifications
+
+Switch notification_washing_machine_finished  "✔ Washing machine finished"  (notifications)   ["glow", "btn-success"]
+Switch notification_frost                     "❄ Frost"                     (notifications)   ["btn-default"]
+Switch notification_missed_doorbell           "🔔 Missed doorbell"          (notifications)   ["btn-danger"]
