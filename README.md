@@ -8,7 +8,7 @@ This is a HABPanel widget. It displays customizable, interactive notification it
 Installation
 ------------
 
-- Use the [HABPanel Image Gallery](https://community.openhab.org/t/habpanel-widget-gallery/34691) and search for `gersilex/informational-header`.
+- Use the [HABPanel Widget Gallery](https://community.openhab.org/t/habpanel-widget-gallery/34691) and search for `gersilex/informational-header`.
 - Click the import button.
 
 -or-
