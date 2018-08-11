@@ -39,4 +39,4 @@ For example, you could stop a flood alarm, turn off your whole-house-audio syste
 Contributing
 ------------
 
-Feel encouraged to open up issues on GitHub, fork, improve the code and discuss in the [official openHAB Community forums thread]()
+Feel encouraged to open up issues on GitHub, fork, improve the code and discuss in the [official openHAB Community forums thread](https://community.openhab.org/t/custom-widget-informational-header/35953)
